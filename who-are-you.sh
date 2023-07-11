@@ -1,1 +1,1 @@
-curl " https://learn.zone01dakar.sn/assets/superhero/all.json" | jq '.[70].Batman'
+curl " https://learn.zone01dakar.sn/assets/superhero/all.json" | jq '.[52].Batman'
