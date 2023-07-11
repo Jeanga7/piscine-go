@@ -1,1 +1,3 @@
-find {"a*","*z","z*a"}
+find.-look "a*"
+find.-look "*z"
+find.-look "z*a"
