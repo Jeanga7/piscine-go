@@ -1,0 +1,1 @@
+ls -l | awk 'NR % 2 == 1' | sed -n '1~2p'
