@@ -10,11 +10,15 @@ func PrintComb() {
 					z01.PrintRune(i)
 					z01.PrintRune(k)
 					z01.PrintRune(q)
-					z01.PrintRune(',')
-					z01.PrintRune(' ')
+					if i < 7 {
+						z01.PrintRune(',')
+						z01.PrintRune(' ')
+					} else {
+						z01.PrintRune('\n')
+					}
 				}
 			}
 		}
 	}
-	z01.PrintRune('\n')
+
 }
