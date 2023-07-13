@@ -6,8 +6,6 @@ func PrintNbr(n int) {
 	z01.PrintRune('n')
 }
 func main() {
-	PrintNbr(-123)
-	PrintNbr(0)
-	PrintNbr(123)
+	PrintNbr(-1230123)
 	z01.PrintRune('\n')
 }
