@@ -14,8 +14,6 @@ func PrintComb() {
 						if i < 7 {
 							z01.PrintRune(',')
 							z01.PrintRune(' ')
-						} else {
-							z01.PrintRune('\n')
 						}
 					}
 				}
