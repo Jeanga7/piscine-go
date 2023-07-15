@@ -1,8 +1,9 @@
 package piscine
 
-import "strconv"
-
 func BasicAtoi(s string) int {
-	basic, _ := strconv.Atoi(s)
+	basic := 0
+	for _, atoi := range s {
+		basic = basic*10 + int(atoi-'0')
+	}
 	return basic
 }
