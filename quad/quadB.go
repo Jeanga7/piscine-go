@@ -1,0 +1,20 @@
+package piscine
+
+import "github.com/01-edu/z01"
+
+func QuadB(x, y int) {
+	for i := 1; i <= y; i++ { //(i pour les colonnes)
+		for j := 1; j <= x; j++ { //(j pour les lignes)
+			if (i == 1 && j == 1) || (i == y && j == x) { //(1ere case  -- 1ere ligne || derniere case -- derniere ligne )
+				z01.PrintRune('/')
+			} else if (i == y && j == 1) || (i == 1 && j == x) { //(1ere case -- derniere ligne || derniere case -- 1ere ligne)
+				z01.PrintRune('\\')
+			} else if ((i == 1 || i == y) && !(j == 1 || j == x)) || ((j == 1 || j == x) && !(i == 1 || i == y)) {
+				z01.PrintRune('*') //(les 1ere et derniere ligne sauf les cases des extremités || les 1ere et derniere colonnes sauf les cases des extremités  )
+			} else {
+				z01.PrintRune(' ') // pour les espaces au milieu du rectangle
+			}
+		}
+		z01.PrintRune('\n')
+	}
+}
