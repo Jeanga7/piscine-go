@@ -12,6 +12,7 @@ func IterativePower(nb int, power int) int {
 	}
 	return r
 }
+
 func main() {
 	fmt.Println(IterativePower(4, 3))
 }
