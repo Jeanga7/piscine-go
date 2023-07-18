@@ -3,9 +3,10 @@ package piscine
 import "github.com/01-edu/z01"
 
 func EightQueens() {
-	pos := []int{0, 0, 0, 0, 0, 0, 0, 0}
+	pos := []int{0, 0, 0, 0, 0, 0, 0}
 	trouver(0, pos)
 }
+
 func contient(qn int, rp int, pos [8]int) bool {
 	for i := 0; i < qn; i++ {
 		t := pos[i]
@@ -15,6 +16,7 @@ func contient(qn int, rp int, pos [8]int) bool {
 	}
 	return true
 }
+
 func trouver(nb int, pos [8]int) {
 	if nb == 8 {
 		for i := 0; i < 8; i++ {
