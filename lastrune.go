@@ -1,6 +1,4 @@
-package main
-
-import "github.com/01-edu/z01"
+package piscine
 
 func LastRune(s string) rune {
 	var Lastword rune
@@ -8,11 +6,4 @@ func LastRune(s string) rune {
 		Lastword = r
 	}
 	return Lastword
-}
-
-func main() {
-	z01.PrintRune(LastRune("Hello!"))
-	z01.PrintRune(LastRune("Salut!"))
-	z01.PrintRune(LastRune("Ola!"))
-	z01.PrintRune('\n')
 }
