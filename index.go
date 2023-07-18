@@ -2,11 +2,16 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
 func Index(s string, toFind string) int {
-	return strings.Index(s, toFind)
+	t := len(toFind)
+	for i, _ := range s {
+		if i+t <= len(s) && s[i:i+t] == toFind {
+			return i
+		}
+	}
+	return -1
 }
 
 func main() {
