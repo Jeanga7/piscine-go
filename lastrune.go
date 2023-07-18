@@ -9,6 +9,7 @@ func LastRune(s string) rune {
 	}
 	return Lastword
 }
+
 func main() {
 	z01.PrintRune(LastRune("Hello!"))
 	z01.PrintRune(LastRune("Salut!"))
