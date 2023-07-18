@@ -7,10 +7,10 @@ func EightQueens() {
 	trouver(0, pos)
 }
 
-func contient(qn int, rp int, pos [8]int) bool {
+func Contient(qn int, rp int, pos [8]int) bool {
 	for i := 0; i < qn; i++ {
 		t := pos[i]
-		if t == rp || t == rp-(qn-1) || t == rp+(qn-1) {
+		if t == rp || t == rp-(qn-i) || t == rp+(qn-i) {
 			return false
 		}
 	}
@@ -25,7 +25,7 @@ func trouver(nb int, pos [8]int) {
 		z01.PrintRune(10)
 	} else {
 		for i := 0; i < 8; i++ {
-			if contient(nb, i, pos) {
+			if Contient(nb, i, pos) {
 				pos[nb] = i
 				trouver(nb+1, pos)
 			}
