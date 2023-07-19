@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func Capitalize(s string) string {
 	rs := []rune(s) // chaine en rune
@@ -19,8 +17,4 @@ func Capitalize(s string) string {
 		}
 	}
 	return string(rs) // convers rune - string et renvoyer
-}
-
-func main() {
-	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
 }
