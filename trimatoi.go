@@ -8,7 +8,7 @@ func TrimAtoi(s string) int {
 		if c >= '0' && c <= '9' {
 			r = r*10 + int(c-'0')
 		}
-		if c == '-' {
+		if c == '-' && r == 0 {
 			x *= -1
 		}
 	}
