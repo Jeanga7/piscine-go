@@ -9,7 +9,7 @@ func Capitalize(s string) string {
 				rs[i] = r - 'a' + 'A' // pour mettre en maj
 			}
 			if !sc && r >= 'A' && r <= 'Z' {
-				r[i] = r - 'A' + 'a' // pour les enlever les maj qui devez pas etre maj
+				rs[i] = r - 'A' + 'a' // pour les enlever les maj qui devez pas etre maj
 			}
 			sc = false
 		} else {
