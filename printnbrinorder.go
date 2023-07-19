@@ -7,7 +7,7 @@ func PrintNbrInOrder(n int) {
 		return
 	}
 
-	s := [10]int{} //tableau de taille 10 pour compter de 0 a 9
+	s := [10]int{} // tableau de taille 10 pour compter de 0 a 9
 	if n == 0 {
 		z01.PrintRune('0')
 		return
@@ -18,10 +18,10 @@ func PrintNbrInOrder(n int) {
 		n /= 10     // suppr dernier chiffre de n
 	}
 	for i := 0; i < 10; i++ {
-		count := s[i] //recuperer le compteur pour i
+		count := s[i] // recuperer le compteur pour i
 		for count > 0 {
-			z01.PrintRune(rune(i + '0')) //imprimer le chiffre i en tant que caractere
-			count--                      //decrementer le compteur
+			z01.PrintRune(rune(i + '0')) // imprimer le chiffre i en tant que caractere
+			count--                      // decrementer le compteur
 		}
 	}
 }
