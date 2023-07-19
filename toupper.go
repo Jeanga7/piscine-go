@@ -1,9 +1,11 @@
 package piscine
 
-import (
-	"strings"
-)
-
 func ToUpper(s string) string {
-	return strings.ToUpper(s)
+	j := []rune(s)
+	for i, up := range j {
+		if up >= 'a' && up <= 'z' {
+			j[i] = up - ('a' - 'A')
+		}
+	}
+	return string(j)
 }
