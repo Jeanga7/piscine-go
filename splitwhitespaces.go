@@ -5,6 +5,9 @@ func SplitWhiteSpaces(s string) []string {
 	a := 0
 	for i, r := range s {
 		if r == ' ' || r == '\n' || r == '\t' {
+			if s[a:i] == " " {
+				continue
+			}
 			w = append(w, s[a:i])
 			a = i + 1
 		}
