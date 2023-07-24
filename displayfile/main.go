@@ -18,7 +18,6 @@ func main() {
 		// lire le contenue du fichier
 		if arg[0] == "quest8.txt" {
 			contenue, erreur := ioutil.ReadFile(arg[0])
-
 			if erreur != nil {
 				fmt.Println(erreur)
 				return
