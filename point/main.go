@@ -50,6 +50,4 @@ func main() {
 	z01.PrintRune('2')
 	z01.PrintRune('1')
 	z01.PrintRune('\n')
-
-	//fmt.Printf("x = %d, y = %d\n", points.x, points.y)
 }
