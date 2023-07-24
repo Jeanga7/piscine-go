@@ -14,22 +14,26 @@ func setPoint(ptr *point) {
 	ptr.y = 21
 }
 
-/*func recrune(num int) {
+func recrune(num int) {
 	if num == 0 {
 		return
 	}
-}*/
-/*func convrune(num int) {
+	nbr := num % 10
+	recrune(num / 10)
+	z01.PrintRune(rune(nbr + '0'))
+}
+func convrune(num int) {
 	if num == 0 {
 		z01.PrintRune('0')
 		return
 	}
 	if num < 0 {
+		z01.PrintRune(' ')
 		z01.PrintRune('-')
 		num = -num
 	}
-	convrune(num)
-}*/
+	recrune(num)
+}
 func main() {
 	points := &point{}
 
@@ -39,15 +43,13 @@ func main() {
 	z01.PrintRune(' ')
 	z01.PrintRune('=')
 	z01.PrintRune(' ')
-	z01.PrintRune('4')
-	z01.PrintRune('2')
+	convrune(points.x)
 	z01.PrintRune(',')
 	z01.PrintRune(' ')
 	z01.PrintRune('y')
 	z01.PrintRune(' ')
 	z01.PrintRune('=')
 	z01.PrintRune(' ')
-	z01.PrintRune('2')
-	z01.PrintRune('1')
+	convrune(points.y)
 	z01.PrintRune('\n')
 }
