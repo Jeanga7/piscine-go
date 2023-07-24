@@ -22,6 +22,7 @@ func recrune(num int) {
 	recrune(num / 10)
 	z01.PrintRune(rune(nbr + '0'))
 }
+
 func convrune(num int) {
 	if num == 0 {
 		z01.PrintRune('0')
@@ -34,6 +35,7 @@ func convrune(num int) {
 	}
 	recrune(num)
 }
+
 func main() {
 	points := &point{}
 
