@@ -7,5 +7,4 @@ func BasicJoin(elems []string) string {
 	}
 
 	return result
-
 }
