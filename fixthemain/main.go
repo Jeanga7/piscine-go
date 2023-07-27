@@ -12,6 +12,7 @@ func PrintStr(s string) {
 	}
 	z01.PrintRune('\n')
 }
+
 func OpenDoor(ptrDoor *Door) {
 	PrintStr("Door Opening...")
 	ptrDoor.state = "OPEN"
