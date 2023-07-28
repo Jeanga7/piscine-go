@@ -1,4 +1,4 @@
-package main
+package piscine
 
 func Compact(ptr *[]string) int {
 	var tab []string
@@ -7,5 +7,6 @@ func Compact(ptr *[]string) int {
 			tab = append(tab, i)
 		}
 	}
+	tab = *ptr
 	return len(tab)
 }
