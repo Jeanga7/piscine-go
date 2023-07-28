@@ -6,7 +6,7 @@ func Compact(ptr *[]string) int {
 		if i != "" {
 			tab = append(tab, i)
 		}
-		tab = *ptr
 	}
+	*ptr = tab
 	return len(tab)
 }
