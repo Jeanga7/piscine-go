@@ -10,7 +10,7 @@ type List struct {
 	Tail *NodeL
 }
 
-func ListPushBack(l *List, data interface{}) {
+func ListPushFront(l *List, data interface{}) {
 	new := &NodeL{Data: data}
 	if l.Head == nil {
 		l.Head = new
