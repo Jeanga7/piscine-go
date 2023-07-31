@@ -1,4 +1,4 @@
-package piscine
+package main
 
 type NodeL struct {
 	Data interface{}
@@ -10,13 +10,13 @@ type List struct {
 	Tail *NodeL
 }
 
-func ListPushFront(l *List, data interface{}) {
+func ListPushBack(l *List, data interface{}) {
 	new := &NodeL{Data: data}
 	if l.Head == nil {
 		l.Head = new
 		l.Tail = new
 	} else {
-		new.Next = l.Head
-		l.Head = new
+		l.Tail.Next = new
+		l.Tail = new
 	}
 }
