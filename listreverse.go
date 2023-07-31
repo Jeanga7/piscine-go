@@ -2,8 +2,7 @@ package piscine
 
 func ListReverse(l *List) {
 	deb, actuel, prev := l.Head, l.Head, l.Head
-	//prev = nil
-
+	// prev = nil
 	for actuel != nil {
 		next := actuel.Next
 		actuel.Next = prev
