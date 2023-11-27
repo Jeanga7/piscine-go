@@ -1,18 +1,34 @@
-package piscine
+package main
 
 import (
+	
 	"github.com/01-edu/z01"
 )
+func main() {
+	PrintNbr(-9223372036854775808)
+	PrintNbr(-123)
+	PrintNbr(0)
+	PrintNbr(123)
+	z01.PrintRune('\n')
+}
+
 
 func PrintNbr(n int) {
-	if n < 0 {
-		z01.PrintRune('-')
-		n *= -1
-	}
 
-	if n >= 10 {
-		PrintNbr(n / 10)
-	}
-
-	z01.PrintRune(rune(n%10) + '0')
+	t:=1
+		if n<0{
+			t=-1
+			z01.PrintRune('-')
+		}
+		if n!=0{
+			f:=(n/10)*t
+			if f!=0{
+				PrintNbr(f)
+			}
+			k:=((n%10*t))+'0'
+			z01.PrintRune(rune(k))
+			}else{
+				z01.PrintRune('0')
+			}
+		
 }
