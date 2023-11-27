@@ -1,17 +1,9 @@
-package main
+package piscine 
 
 import (
 	
 	"github.com/01-edu/z01"
 )
-func main() {
-	PrintNbr(-9223372036854775808)
-	PrintNbr(-123)
-	PrintNbr(0)
-	PrintNbr(123)
-	z01.PrintRune('\n')
-}
-
 
 func PrintNbr(n int) {
 
